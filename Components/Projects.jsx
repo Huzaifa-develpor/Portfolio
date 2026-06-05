@@ -73,7 +73,7 @@ const frontendProjects = [
     title: "Personal Portfolio",
     desc: "Fully responsive personal portfolio website with modern UI, smooth animations and all sections.",
     tags: ["React", "Tailwind CSS"],
-    live: "#",
+    live: "https://portfolio-alpha-eosin-13.vercel.app/",
     github: "https://github.com/Huzaifa-develpor",
   },
 ]
