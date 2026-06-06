@@ -14,7 +14,7 @@ const mernProjects = [
     title: "Task Manager App",
     desc: "Complete CRUD operations with JWT authentication, protected routes, MongoDB integration & user-specific task management.",
     tags: ["MERN", "JWT", "MongoDB", "REST API"],
-    live: "https://task-manager-pscm.vercel.app/",
+    live: "https://task-manager-rho-six-26.vercel.app/",
     github: "https://github.com/Huzaifa-develpor/Task-Manager",
   },
   {
