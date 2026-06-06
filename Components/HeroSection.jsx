@@ -18,7 +18,7 @@ const HeroSection = () => {
   return (
     <section
       id="home"
-      className="relative min-h-screen flex items-center px-6 md:px-10 lg:px-16 pt-20 bg-black overflow-hidden"
+      className="relative min-h-screen flex items-center px-6 md:px-10 lg:px-16 pt-20 bg-black overflow-x-hidden"
     >
       <link
         href="https://fonts.googleapis.com/css2?family=Syne:wght@700;800&family=Orbitron:wght@400;600;700&display=swap"
@@ -37,14 +37,10 @@ const HeroSection = () => {
           </p>
 
           {/* Main Name */}
-          <h1
-            className="font-['Syne'] font-extrabold text-white leading-[0.92] tracking-tight mb-6"
-            style={{ fontSize: "clamp(40px, 7.5vw, 96px)" }}
-          >
-            Muhammad{" "}
-            <span className="text-emerald-400">Huzaifa</span>
-            <br />
-            Anwar
+          <h1 className="font-['Syne'] font-extrabold text-white leading-[0.95] tracking-tight mb-6 text-[11vw] sm:text-[8vw] md:text-[7vw] lg:text-[80px] xl:text-[96px]">
+            <span className="block">Muhammad</span>
+            <span className="block text-emerald-400">Huzaifa</span>
+            <span className="block">Anwar</span>
           </h1>
 
           {/* Subtitle */}
