@@ -7,7 +7,7 @@ const mernProjects = [
     desc: "Full MERN stack e-commerce with Admin Panel, JWT authentication, product management, search functionality, shopping cart & secure REST APIs.",
     tags: ["React", "Node.js", "MongoDB", "JWT", "Express", "Admin Panel"],
     live: "https://car-e-commerce-website-orpin.vercel.app/",
-    github: "https://github.com/Huzaifa-develpor",
+    github: "https://github.com/Huzaifa-develpor/Car-E-Commerce-Website",
   },
   {
     icon: "✅",
@@ -15,7 +15,7 @@ const mernProjects = [
     desc: "Complete CRUD operations with JWT authentication, protected routes, MongoDB integration & user-specific task management.",
     tags: ["MERN", "JWT", "MongoDB", "REST API"],
     live: "https://task-manager-pscm.vercel.app/",
-    github: "https://github.com/Huzaifa-develpor",
+    github: "https://github.com/Huzaifa-develpor/Task-Manager",
   },
   {
     icon: "🔐",
@@ -23,7 +23,7 @@ const mernProjects = [
     desc: "User registration & login, JWT token auth, bcrypt password hashing, authorization middleware & protected routes.",
     tags: ["Node.js", "JWT", "bcrypt", "MongoDB"],
     live: "https://mern-auth-system-oofh.vercel.app/",
-    github: "https://github.com/Huzaifa-develpor",
+    github: "https://github.com/Huzaifa-develpor/MERN-Auth-System",
   },
 ]
 
@@ -34,7 +34,7 @@ const frontendProjects = [
     desc: "Real-time weather data using OpenWeather API. Search any city and get temperature, humidity, wind speed & conditions.",
     tags: ["JavaScript", "REST API", "HTML", "CSS"],
     live: "https://weather-web-two-woad.vercel.app/",
-    github: "https://github.com/Huzaifa-develpor",
+    github: "https://github.com/Huzaifa-develpor/Weather-Web",
   },
   {
     icon: "✂️",
@@ -42,7 +42,7 @@ const frontendProjects = [
     desc: "Interactive rock paper scissors game with score tracking, animations and clean responsive UI.",
     tags: ["JavaScript", "HTML", "CSS"],
     live: "https://rock-paper-scissor-game-smoky.vercel.app/",
-    github: "https://github.com/Huzaifa-develpor",
+    github: "https://github.com/Huzaifa-develpor/Rock-Paper-Scissor_Game",
   },
   {
     icon: "⭕",
@@ -50,7 +50,7 @@ const frontendProjects = [
     desc: "Two player tic tac toe game with win detection, draw logic and restart functionality.",
     tags: ["JavaScript", "HTML", "CSS"],
     live: "https://tic-tac-toe-game-ten-khaki.vercel.app/",
-    github: "https://github.com/Huzaifa-develpor",
+    github: "https://github.com/Huzaifa-develpor/Tic-Tac-Toe-Game",
   },
   {
     icon: "💱",
@@ -58,7 +58,7 @@ const frontendProjects = [
     desc: "Real-time exchange rates using external API with dynamic data rendering and clean UI.",
     tags: ["JavaScript", "REST API"],
     live: "https://currency-converter-taupe-pi-79.vercel.app/",
-    github: "https://github.com/Huzaifa-develpor",
+    github: "https://github.com/Huzaifa-develpor/Currency-Converter",
   },
   {
     icon: "🧠",
@@ -66,7 +66,7 @@ const frontendProjects = [
     desc: "Dynamic quiz with multiple questions, score tracking and interactive UI built in vanilla JS.",
     tags: ["JavaScript", "HTML", "CSS"],
     live: "https://quiz-game-sable-seven.vercel.app/",
-    github: "https://github.com/Huzaifa-develpor",
+    github: "https://github.com/Huzaifa-develpor/Quiz-Game",
   },
   {
     icon: "🗂️",
@@ -74,7 +74,7 @@ const frontendProjects = [
     desc: "Fully responsive personal portfolio website with modern UI, smooth animations and all sections.",
     tags: ["React", "Tailwind CSS"],
     live: "https://portfolio-alpha-eosin-13.vercel.app/",
-    github: "https://github.com/Huzaifa-develpor",
+    github: "https://github.com/Huzaifa-develpor/Portfolio",
   },
 ]
 
