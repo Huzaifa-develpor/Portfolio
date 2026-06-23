@@ -207,7 +207,7 @@ const Projects = () => {
         <div className="flex items-center gap-4 mb-16">
           <span className="font-['Orbitron'] text-emerald-400 text-[10px] tracking-[4px] uppercase">03</span>
           <div className="w-10 h-px bg-emerald-400/40" />
-          <h2 className="font-['Syne'] text-5xl font-extrabold text-white tracking-tight">
+          <h2 className="font-['Syne'] text-3xl sm:text-4xl md:text-5xl font-extrabold text-white tracking-tight">
             Projects
           </h2>
         </div>

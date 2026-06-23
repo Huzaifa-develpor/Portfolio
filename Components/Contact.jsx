@@ -51,14 +51,14 @@ const Contact = () => {
         <div className="flex items-center gap-4 mb-6">
           <span className="font-['Orbitron'] text-emerald-400 text-[10px] tracking-[4px] uppercase">04</span>
           <div className="w-10 h-px bg-emerald-400/40" />
-          <h2 className="font-['Syne'] text-5xl font-extrabold text-white tracking-tight">
+          <h2 className="font-['Syne'] text-3xl sm:text-4xl md:text-5xl font-extrabold text-white tracking-tight">
             Contact
           </h2>
         </div>
 
         {/* Heading */}
         <div className="mb-14 max-w-xl">
-          <h3 className="font-['Syne'] text-3xl md:text-4xl font-extrabold text-white leading-tight mb-4">
+          <h3 className="font-['Syne'] text-3xl sm:text-4xl md:text-5xl font-extrabold text-white leading-tight mb-4">
             Got an opportunity?<br />
             <span className="text-emerald-400">Let's talk.</span>
           </h3>

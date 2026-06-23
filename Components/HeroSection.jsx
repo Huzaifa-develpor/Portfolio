@@ -37,7 +37,7 @@ const HeroSection = () => {
           </p>
 
           {/* Main Name */}
-          <h1 className="font-['Syne'] font-extrabold text-white leading-[0.95] tracking-tight mb-6 text-[11vw] sm:text-[8vw] md:text-[7vw] lg:text-[80px] xl:text-[96px]">
+          <h1 className="font-['Syne'] font-extrabold text-white leading-[0.95] tracking-tight mb-6 text-[9vw] sm:text-[6.75vw] md:text-[5.75vw] lg:text-[80px] xl:text-[96px]">
             <span className="block">Muhammad</span>
             <span className="block text-emerald-400">Huzaifa</span>
             <span className="block">Anwar</span>
