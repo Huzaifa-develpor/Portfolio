@@ -15,12 +15,12 @@ const timeline = [
   },
   {
     year: "2024",
-    title: "Frontend Dev Internship",
-    desc: "Completed professional virtual internship at CodeAlpha — real-world dev workflow.",
+    title: "Started Development",
+    desc: "Began learning web development — HTML, CSS, JavaScript and frontend fundamentals.",
     current: false,
   },
   {
-    year: "2023",
+    year: "2024",
     title: "Started CS Degree",
     desc: "Began Computer Science studies and deep-dived into web development.",
     current: false,

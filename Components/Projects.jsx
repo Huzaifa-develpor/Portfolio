@@ -3,7 +3,7 @@ import React from 'react'
 const mernProjects = [
   {
     icon: "🛒",
-    title: "E-Commerce Application",
+    title: " CarHouse(E-Commerce)",
     desc: "Full MERN stack e-commerce with Admin Panel, JWT authentication, product management, search functionality, shopping cart & secure REST APIs.",
     tags: ["React", "Node.js", "MongoDB", "JWT", "Express", "Admin Panel"],
     live: "https://car-e-commerce-website-orpin.vercel.app/",
@@ -11,7 +11,7 @@ const mernProjects = [
   },
   {
     icon: "✅",
-    title: "Task Manager App",
+    title: "Taskify",
     desc: "Complete CRUD operations with JWT authentication, protected routes, MongoDB integration & user-specific task management.",
     tags: ["MERN", "JWT", "MongoDB", "REST API"],
     live: "https://task-manager-rho-six-26.vercel.app/",
@@ -93,7 +93,7 @@ const FeaturedCard = ({ project }) => (
 
     <div className="text-4xl">{project.icon}</div>
 
-    <h3 className="font-['Syne'] text-lg font-bold text-white leading-tight pr-20">
+    <h3 className="font-['Syne'] text-md font-bold text-white leading-tight pr-20">
       {project.title}
     </h3>
 
