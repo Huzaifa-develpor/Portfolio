@@ -9,31 +9,54 @@ const Navbar = () => {
   useEffect(() => {
     const handleScroll = () => {
       setScrolled(window.scrollY > 20)
-      const sections = navLinks.map((link) =>
-        document.getElementById(link.toLowerCase())
-      )
-      const scrollPosition = window.scrollY + 150
-      sections.forEach((section, index) => {
-        if (
-          section &&
-          scrollPosition >= section.offsetTop &&
-          scrollPosition < section.offsetTop + section.offsetHeight
-        ) {
-          setActiveSection(navLinks[index])
-        }
-      })
     }
-    window.addEventListener("scroll", handleScroll)
+
+    const sections = navLinks
+      .map((link) => document.getElementById(link.toLowerCase()))
+      .filter(Boolean)
+
+    if (sections.length === 0) {
+      handleScroll()
+      return undefined
+    }
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        const visibleEntry = entries
+          .filter((entry) => entry.isIntersecting)
+          .sort((a, b) => b.intersectionRatio - a.intersectionRatio)[0]
+
+        if (visibleEntry) {
+          const sectionId = visibleEntry.target.id
+          const activeLink = navLinks.find((link) => link.toLowerCase() === sectionId)
+          if (activeLink) {
+            setActiveSection(activeLink)
+          }
+        }
+      },
+      {
+        root: null,
+        rootMargin: '-20% 0px -35% 0px',
+        threshold: [0.2, 0.4, 0.6],
+      }
+    )
+
+    sections.forEach((section) => observer.observe(section))
     handleScroll()
-    return () => window.removeEventListener("scroll", handleScroll)
+
+    window.addEventListener('scroll', handleScroll)
+    return () => {
+      window.removeEventListener('scroll', handleScroll)
+      observer.disconnect()
+    }
   }, [])
 
   return (
     <header
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
         scrolled
-          ? "border-b border-white/10 bg-black/90 backdrop-blur-xl"
-          : "bg-transparent"
+          ? 'border-b border-white/10 bg-black/90 shadow-[0_10px_35px_rgba(0,0,0,0.35)] backdrop-blur-xl'
+          : 'border-b border-white/10 bg-black/80 backdrop-blur-xl'
       }`}
     >
       <nav className="mx-auto flex h-20 max-w-7xl items-center justify-between px-6 lg:px-10">
@@ -52,8 +75,8 @@ const Navbar = () => {
                 onClick={() => setActiveSection(link)}
                 className={`font-['Orbitron'] text-[10px] uppercase tracking-[3px] transition-all duration-300 ${
                   activeSection === link
-                    ? "text-emerald-400"
-                    : "text-gray-500 hover:text-white"
+                    ? 'text-emerald-400'
+                    : 'text-gray-500 hover:text-white'
                 }`}
               >
                 {link}
@@ -78,16 +101,16 @@ const Navbar = () => {
           className="md:hidden flex flex-col justify-center items-center gap-[5px] w-10 h-10 rounded-lg border border-white/10 bg-white/5"
           aria-label="Toggle menu"
         >
-          <span className={`block w-5 h-0.5 bg-white transition-all duration-300 ${menuOpen ? "rotate-45 translate-y-[7px]" : ""}`} />
-          <span className={`block w-5 h-0.5 bg-white transition-all duration-300 ${menuOpen ? "opacity-0" : ""}`} />
-          <span className={`block w-5 h-0.5 bg-white transition-all duration-300 ${menuOpen ? "-rotate-45 -translate-y-[7px]" : ""}`} />
+          <span className={`block w-5 h-0.5 bg-white transition-all duration-300 ${menuOpen ? 'rotate-45 translate-y-[7px]' : ''}`} />
+          <span className={`block w-5 h-0.5 bg-white transition-all duration-300 ${menuOpen ? 'opacity-0' : ''}`} />
+          <span className={`block w-5 h-0.5 bg-white transition-all duration-300 ${menuOpen ? '-rotate-45 -translate-y-[7px]' : ''}`} />
         </button>
       </nav>
 
       {/* Mobile Dropdown */}
       <div
         className={`md:hidden overflow-hidden transition-all duration-300 ${
-          menuOpen ? "max-h-96 opacity-100" : "max-h-0 opacity-0"
+          menuOpen ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'
         } bg-black/95 border-t border-white/8`}
       >
         <ul className="flex flex-col px-6 py-4 gap-1">
@@ -97,7 +120,7 @@ const Navbar = () => {
                 href={`#${link.toLowerCase()}`}
                 onClick={() => { setActiveSection(link); setMenuOpen(false) }}
                 className={`block py-3 font-['Orbitron'] text-[10px] uppercase tracking-[3px] transition-all duration-300 border-b border-white/5 ${
-                  activeSection === link ? "text-emerald-400" : "text-gray-500 hover:text-white"
+                  activeSection === link ? 'text-emerald-400' : 'text-gray-500 hover:text-white'
                 }`}
               >
                 {link}
